@@ -1,4 +1,4 @@
-/* Main Menu */
+
 .main-menu {
     position: relative;
     width: 1366px;
@@ -6,7 +6,7 @@
     background: #FFFFFF;
 }
 
-/* Header */
+
 .header {
     position: absolute;
     width: 1366px;
@@ -17,7 +17,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Sidebar */
+
 .sidebar {
     position: absolute;
     width: 263px;
@@ -28,7 +28,7 @@
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Social icons */
+
 .instagram-icon {
     position: absolute;
     width: 23px;
@@ -46,7 +46,7 @@
     transform: rotate(-0.12deg);
 }
 
-/* Night mode button */
+
 .night-mode {
     position: absolute;
     width: 48px;
@@ -56,7 +56,7 @@
     background: url(night-mode.png);
 }
 
-/* Menu items background rectangles */
+
 .menu-rect {
     position: absolute;
     width: 252px;
@@ -72,7 +72,7 @@
 .menu-rect4 { top: 259px; }
 .menu-rect5 { top: 312px; }
 
-/* Menu item text */
+
 .menu-text {
     position: absolute;
     font-family: 'Faustina', sans-serif;
@@ -90,14 +90,14 @@
 .text-tests { left: 92px; top: 267px; width: 78px; height: 15px; }
 .text-diary { left: 102px; top: 321px; width: 56px; height: 15px; }
 
-/* Menu icons */
+
 .icon-home { position: absolute; width: 23px; height: 23px; left: 29px; top: 105px; }
 .icon-books { position: absolute; width: 23px; height: 23px; left: 30px; top: 158px; }
 .icon-book-alt { position: absolute; width: 23px; height: 23px; left: 30px; top: 208px; }
 .icon-journal-alt { position: absolute; width: 24px; height: 24px; left: 32px; top: 261px; }
 .icon-diary-bookmark { position: absolute; width: 24px; height: 24px; left: 30px; top: 316px; }
 
-/* Hamburger menu */
+
 .hamburger div {
     position: absolute;
     width: 35px;
@@ -110,7 +110,7 @@
 .hamburger .line2 { top: 32px; left: 12px; }
 .hamburger .line3 { top: 45px; left: 12px; }
 
-/* Main content box */
+
 .content-box {
     position: absolute;
     width: 764px;
@@ -121,7 +121,7 @@
     border: 2px solid #000000;
 }
 
-/* Greeting text */
+
 .greeting {
     position: absolute;
     width: 276px;
@@ -137,7 +137,7 @@
     color: #000000;
 }
 
-/* Subjects */
+
 .subject {
     position: absolute;
     font-family: 'Faustina', sans-serif;
@@ -157,7 +157,7 @@
 .subject-algebra { left: 856px; top: 488px; width: 96px; height: 30px; }
 .subject-pe { left: 841px; top: 538px; width: 141px; height: 30px; }
 
-/* Time slots */
+
 .time-slot {
     position: absolute;
     font-family: 'Faustina', sans-serif;
@@ -177,7 +177,7 @@
 .time-1325 { left: 494px; top: 488px; width: 116px; height: 30px; }
 .time-1420 { left: 494px; top: 538px; width: 121px; height: 30px; }
 
-/* Numbers in schedule */
+
 .schedule-number {
     position: absolute;
     font-family: 'Faustina', sans-serif;
@@ -197,7 +197,7 @@
 .num6 { left: 432px; top: 479px; width: 19px; height: 45px; }
 .num7 { left: 435px; top: 527px; width: 16px; height: 45px; }
 
-/* Lines */
+
 .line {
     position: absolute;
     width: 765px;
@@ -213,7 +213,7 @@
 .line6 { top: 476px; left: 404px; }
 .line7 { top: 530px; left: 405px; }
 
-/* Vertical lines */
+
 .vline {
     position: absolute;
     width: 375px;
@@ -225,7 +225,7 @@
 .vline1 { left: 479px; top: 204px; }
 .vline2 { left: 624px; top: 204px; }
 
-/* Today schedule title */
+
 .today-title {
     position: absolute;
     width: 157px;
