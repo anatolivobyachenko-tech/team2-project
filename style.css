@@ -138,3 +138,48 @@ body {
     font-weight: bold;
     background-color: #DFF3FF;
 }
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .side-menu {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .side-menu a {
+        font-size: 14px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .side-menu img {
+        margin-right: 5px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px 10px;
+    }
+
+    .greeting {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .table-title {
+        font-size: 20px;
+    }
+
+    .schedule th, .schedule td {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
