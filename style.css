@@ -240,17 +240,3 @@
     text-align: center;
     color: #000000;
 }
-
-.menuBackground{
-    width: 50%;
-    height: 50%;
-    background-clip: cover;
-    background-position: left;
-    background-color: #C8F0FF;
-
-}
-
-.headerCenter{
-    text-align: center;
-    align-items: center;
-}
