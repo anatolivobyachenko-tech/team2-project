@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Щоденник</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Щоденник</h1>
+        <img src="src/night-mode.svg" alt="Night Mode" class="night-icon">
+    </div>
+    <div class="side-menu">
+        <a href="index.html"><img src="src/home.svg" alt="Home">Домашня сторінка</a>
+        <a href="#schedule"><img src="src/books.svg" alt="Schedule">Розклад</a>
+        <a href="#homework"><img src="src/book-alt.svg" alt="Homework">Домашка</a>
+        <a href="#tests"><img src="src/diary-bookmark-down.svg" alt="Tests">Тести</a>
+        <a href="#diary"><img src="src/journal-alt.svg" alt="Diary">Щоденник</a>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="src/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://t.me" target="_blank">
+                <img src="src/telegram-black-.svg" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="greeting">
+            Привіт Дмитро!<br>Ось твої оцінки за тиждень
+        </div>
+
+        <h2 class="table-title">Щоденник оцінок</h2>
+
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>Предмет</th>
+                    <th>ПН</th>
+                    <th>ВТ</th>
+                    <th>СР</th>
+                    <th>ЧТ</th>
+                    <th>ПТ</th>
+                    <th>Сер. бал</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Українська мова</td><td>10</td><td>9</td><td>11</td><td>10</td><td>9</td><td>9.8</td></tr>
+                <tr><td>Англійська мова</td><td>11</td><td>10</td><td>10</td><td>11</td><td>10</td><td>10.4</td></tr>
+                <tr><td>Історія України</td><td>9</td><td>10</td><td>9</td><td>10</td><td>9</td><td>9.4</td></tr>
+                <tr><td>Всесвітня Історія</td><td>10</td><td>9</td><td>10</td><td>10</td><td>10</td><td>9.8</td></tr>
+                <tr><td>Географія</td><td>9</td><td>9</td><td>10</td><td>9</td><td>10</td><td>9.4</td></tr>
+                <tr><td>Біологія</td><td>10</td><td>10</td><td>9</td><td>10</td><td>10</td><td>9.8</td></tr>
+                <tr><td>Алгебра</td><td>11</td><td>10</td><td>11</td><td>10</td><td>11</td><td>10.6</td></tr>
+                <tr><td>Геометрія</td><td>9</td><td>10</td><td>9</td><td>10</td><td>9</td><td>9.4</td></tr>
+                <tr><td>Хімія</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10.0</td></tr>
+                <tr><td>Фізкультура</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>—</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="shodenikscript.js"></script>
+</body>
+</html>
