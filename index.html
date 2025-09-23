@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <link rel="stylesheet" href="assets/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Document</title>
-    <div class = "header">
-        <h1>Щоденник</h1>
-    </div>  
+    <title>Домашня сторінка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menuBackground">
+    <div class="header">
+        <h1>Домашня сторінка</h1>
     </div>
-    
+    <div class="side-menu">
+        <a href="#home"><img src="src/home.svg" alt="Home">Домашня сторінка</a>
+        <a href="#schedule"><img src="src/books.svg" alt="Schedule">Розклад</a>
+        <a href="#homework"><img src="src/book-alt.svg" alt="Homework">Домашка</a>
+        <a href="#tests"><img src="src/diary-bookmark-down.svg" alt="Tests">Тести</a>
+        <a href="#diary"><img src="src/journal-alt.svg" alt="Diary">Щоденник</a>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="src/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://t.me" target="_blank">
+                <img src="src/telegram-black-.svg" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="greeting" id="home">
+            Привіт Дмитро!<br>Сьогодні четверг
+        </div>
+
+        <h2 class="table-title">Розклад та домашня робота на сьогодні</h2>
+
+        <table class="schedule" id="schedule">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Предмет</th>
+                    <th>Завдання</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Українська мова</td><td>§9 читати, вправа 6,9</td></tr>
+                <tr><td>2</td><td>Мистецтво</td><td>§4 конспект</td></tr>
+                <tr><td>3</td><td>Всесвітня Історія</td><td>§11 конспект</td></tr>
+                <tr><td>4</td><td>Геометрія</td><td>§7 номера 48,50</td></tr>
+                <tr><td>5</td><td>Фізика</td><td>§9 конспект №29</td></tr>
+                <tr><td>6</td><td>Українська література</td><td>Ст 65 вивчити вірш</td></tr>
+                <tr><td>7</td><td>Фізкультура</td><td>Не задано</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
