@@ -152,7 +152,8 @@ table tr:last-child td:first-child {
 table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
-.greeting {
+
+.greetingForRozklad{
     width: 200px;
     background: #E7F9FF;
     border: 1px solid #000;
@@ -163,50 +164,39 @@ table tr:last-child td:last-child {
     font-weight: 700;
     margin-bottom: 20px;
     margin: 0 auto 20px;
-}
+    }
 
-.table-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-
-.schedule {
+.scheduleInRozklad {
     width: 100%;
-    margin: 0 auto;
-    border-collapse: separate;
     border-spacing: 0;
     background: #E7F9FF;
     border-radius: 10px;
     box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
-.schedule th, .schedule td {
+.scheduleInRozklad th, .scheduleInRozklad td {
     border: 1px solid #000;
     padding: 10px;
     text-align: center;
 }
 
-.schedule th {
+.scheduleInRozklad th {
     background: #B5E0F7;
     font-size: 18px;
     font-weight: 700;
 }
 
-.schedule td {
+.scheduleInRozklad td {
     font-size: 16px;
 }
 
-.schedule td:nth-child(1) {
+.scheduleInRozklad td:nth-child(1) {
     font-weight: 600;
     text-align: center;
     padding-left: 15px;
 }
 
-.schedule td:nth-child(7) {
+.scheduleInRozklad td:nth-child(7) {
     font-weight: bold;
     background-color: #DFF3FF;
 }
@@ -226,4 +216,3 @@ table tr:last-child td:last-child {
         padding: 6px;
     }
 }
-

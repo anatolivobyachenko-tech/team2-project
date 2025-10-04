@@ -15,6 +15,17 @@ const questions = [
     question: "Який переклад слова “Desire”?",
     option: ["Мрія", "Побажання", "Почуття"],
     correct: 1
+},
+{
+    question: "Який переклад слова “Whale”?",
+    option: ["Медуза", "Дельфін", "Кит"],
+    correct: 2
+}
+,
+{
+    question: "Який переклад слова “Brave”?",
+    option: ["Сміливий", "Страшний", "Хворий"],
+    correct: 0
 }
 ];
 
