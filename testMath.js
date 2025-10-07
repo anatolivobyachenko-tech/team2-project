@@ -1,4 +1,6 @@
 const optionsContainer = document.querySelector(".question-box")
+const btn = document.getElementById("button")
+btn.style.display = "none"
 
 const questions = [
  {
@@ -66,7 +68,8 @@ function checkAnswer(i) {
     showQuestion()
   } else {
     quizContainer.querySelector("h2").textContent = "Тест завершено!"
-    optionsContainer.innerHTML = `Твій результат: ${score} з ${questions.length} правельні віповіді`
+  optionsContainer.innerHTML = `<div style = "font-size: 20px"> Твій результат: ${score} з ${questions.length} правельні віповіді </div>`
+  btn.style.display = "block"
 }
 }
 showQuestion()
