@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="testGeo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shodenik.css">
-    <title>Щоденник</title>
+    <title>Тест з географії</title>
 </head>
 <body>
     <header>
-        <h1 id="first">Щоденник</h1>
+        <h1 id="first">Тест</h1>
         <a class="buttonTheme">
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="48px" height="48px" viewBox="0 0 512.000000 512.000000"
@@ -35,6 +35,7 @@ l-23 0 0 1750 0 1750 23 0 c13 0 73 -9 133 -20z"/>
                     <a class="iconInButton" href="rozklad.html">
                         <img src="./src/books(1).svg">
                         <span class="buttonStyle"> Розклад </span>
+                        
                     </a>
                     <a class="iconInButton" href="homework.html">
                         <img src="./src/book-alt.svg">
@@ -67,43 +68,26 @@ l-23 0 0 1750 0 1750 23 0 c13 0 73 -9 133 -20z"/>
 	<circle cx="18.406" cy="5.594" r="1.44"/>
                                     </g>
                                 </svg>
-
                             </a>
                         </div>
             </div>
-    <main>
-        
-        <table class="mark">
-            <thead>
-                    <tr>
-                    <th id="thing" colspan="7">Щоденник оцінок</th>
-                    </tr>
-                <tr>
-                    <th>Предмет</th>
-                    <th>ПН</th>
-                    <th>ВТ</th>
-                    <th>СР</th>
-                    <th>ЧТ</th>
-                    <th>ПТ</th>
-                    <th>Сер. бал</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Українська мова</td><td>10</td><td>9</td><td>11</td><td>10</td><td>9</td><td>9.8</td></tr>
-                <tr><td>Англійська мова</td><td>11</td><td>10</td><td>10</td><td>11</td><td>10</td><td>10.4</td></tr>
-                <tr><td>Історія України</td><td>9</td><td>10</td><td>9</td><td>10</td><td>9</td><td>9.4</td></tr>
-                <tr><td>Всесвітня Історія</td><td>10</td><td>9</td><td>10</td><td>10</td><td>10</td><td>9.8</td></tr>
-                <tr><td>Географія</td><td>9</td><td>9</td><td>10</td><td>9</td><td>10</td><td>9.4</td></tr>
-                <tr><td>Біологія</td><td>10</td><td>10</td><td>9</td><td>10</td><td>10</td><td>9.8</td></tr>
-                <tr><td>Алгебра</td><td>11</td><td>10</td><td>11</td><td>10</td><td>11</td><td>10.6</td></tr>
-                <tr><td>Геометрія</td><td>9</td><td>10</td><td>9</td><td>10</td><td>9</td><td>9.4</td></tr>
-                <tr><td>Хімія</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10.0</td></tr>
-                <tr><td>Фізика</td><td>7</td><td>9</td><td>8</td><td>9</td><td>8</td><td>7.8</td></tr>
-                <tr><td>Фізкультура</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>—</td></tr>
-            </tbody>
-        </table>
-    </main>
-
-    <script src="shodenikscript.js"></script>
+                <main>
+                    <div class="question">
+                        <h1>Географія</h1>
+                    <h2>Де знаходиться протока Босфор?</h2>
+                    </div>
+                        <div class="question-box">
+                            <div class="que">У Данії</div>
+                            <div class="que">У Єгипті</div>
+                            <div class="que">У Турції</div>
+                        </div>
+                            <div id="button">
+                                <a id="btnReturn" href="chooseTest.html">
+                                Повернутися до тестів
+                                </a>
+                            </div>
+                </main>
+        </div>
+        <script src="testGeo.js"></script>
 </body>
 </html>

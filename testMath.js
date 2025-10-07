@@ -1,20 +1,33 @@
 const optionsContainer = document.querySelector(".question-box")
+const btn = document.getElementById("button")
+btn.style.display = "none"
 
 const questions = [
+ {
+    question: "Скільки буде 8 × 8?",
+    option: ["98", "64", "48"],
+    correct: 1
+  },
   {
-    question: "Який переклад слова “Reason”?",
-    option: ["Причіна", "Можливість", "Почуття"],
+    question: "Скільки буде √25?",
+    option: ["25", "15", "5"],
+    correct: 2
+  },
+  {
+    question: "Скільки буде 40 ÷ 3?",
+    option: ["13", "20", "17"],
     correct: 0
-  },
-  {
-    question: "Який переклад слова “Sundae”?",
-    option: ["Торт", "Пломбір", "Цукерка"],
-    correct: 1
-  },
-  {
-    question: "Який переклад слова “Desire”?",
-    option: ["Мрія", "Побажання", "Почуття"],
-    correct: 1
+},
+{
+    question: "Скільки буде 63 + 77?",
+    option: ["162", "137", "140"],
+    correct: 2
+}
+,
+{
+    question: "Скільки буде 386 - 133?",
+    option: ["253", "129", "136"],
+    correct: 0
 }
 ];
 
@@ -55,7 +68,8 @@ function checkAnswer(i) {
     showQuestion()
   } else {
     quizContainer.querySelector("h2").textContent = "Тест завершено!"
-    optionsContainer.innerHTML = `Твій результат: ${score} з ${questions.length} правельні віповіді`
+  optionsContainer.innerHTML = `<div style = "font-size: 20px"> Твій результат: ${score} з ${questions.length} правельні віповіді </div>`
+  btn.style.display = "block"
 }
 }
 showQuestion()

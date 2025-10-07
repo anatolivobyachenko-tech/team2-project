@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 window.onload = function() {
     let checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
@@ -25,3 +26,17 @@ function saveCheckboxState() {
         document.cookie = name + "=" + value + "; path=/";
     }
 }
+=======
+let checkBox = document.querySelectorAll(".checkBox input[type=checkbox]")
+for (let i = 0; i < checkBox.length; i++)
+checkBox[i].addEventListener("change", function(){
+let tdElements = this.closest ("td.checkBox")
+
+if (this.checked) {
+    tdElements.style.textDecoration = "line-through"
+}
+else {
+    tdElements.style.textDecoration = "none"
+}
+})
+>>>>>>> 4c9a07d56c90a6dac2f94995686b3aa137310704
