@@ -1,3 +1,20 @@
+const buttonTheme = document.querySelector(".buttonTheme")
+const body = document.body
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark")
+}
+
+buttonTheme.addEventListener("click", function() {
+  body.classList.toggle("dark")
+
+  if (body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark")
+  } else {
+    localStorage.setItem("theme", "light")
+  }
+})
+
 const optionsContainer = document.querySelector(".question-box")
 const btn = document.getElementById("button")
 btn.style.display = "none"
@@ -29,7 +46,7 @@ const questions = [
     option: ["253", "129", "136"],
     correct: 0
 }
-];
+]
 
 let currentIndex = 0
 let score = 0
@@ -49,8 +66,8 @@ for (let i = 0; i < q.option.length; i++) {
     button.textContent = q.option[i]
 
     button.addEventListener("click", function () {
-    checkAnswer(i);
-    });
+    checkAnswer(i)
+    })
 
     optionsContainer.appendChild(button)
   }
@@ -68,8 +85,11 @@ function checkAnswer(i) {
     showQuestion()
   } else {
     quizContainer.querySelector("h2").textContent = "Тест завершено!"
-  optionsContainer.innerHTML = `<div style = "font-size: 20px"> Твій результат: ${score} з ${questions.length} правельні віповіді </div>`
-  btn.style.display = "block"
-}
+    const result = document.querySelector("#result h3")
+    result.textContent = `Твій результат: ${score} з ${questions.length} правильних відповідей`
+    
+    optionsContainer.innerHTML = ""
+    btn.style.display = "block"
+  }
 }
 showQuestion()

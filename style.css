@@ -11,17 +11,33 @@ header{
     height: 60px;
 }
 
+.dark header{
+    box-shadow: 0 4px 6px -2px rgba(255, 244, 244, 0.3);
+    color: white;
+    background-color: #4B4848;
+}
+
 body{
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: white;
 }
+
+body.dark{
+    background-color: #4B4848;
+}
+
 .buttonTheme{
     position: absolute;
     width: 48px;
     height: 48px;
     right: 10px;
     cursor: pointer;
+}
+
+body.dark .buttonTheme svg{
+    fill: white;
 }
 
 .buttonTheme:hover{
@@ -56,6 +72,11 @@ body{
     box-sizing: border-box;
 }
 
+body.dark .sideMenu{
+    background-color: #C85EE3;
+    box-shadow: inset 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
 .sideMenu a{
     text-decoration: none;
     color: black;
@@ -80,6 +101,12 @@ body{
     box-sizing: border-box;
     box-shadow: 0 4px 6px -2px rgba(0,0,0,0.3);
     cursor: pointer;
+}
+
+body.dark .iconInButton{
+    border: 2px solid #F6D1FF;
+    background-color: #F6D1FF;
+    box-shadow: 0 4px 6px -2px rgba(255, 255, 255, 0.3);
 }
 
 .iconInButton:hover{
@@ -129,7 +156,11 @@ body{
     fill: #68C8F1;
 }
 
-main{
+body.dark .iconLink svg{
+    fill: #F6D1FF;
+}
+
+.mainBg{
     flex: 1;
     background-color:#C8F0FF;
     border: #000;
@@ -139,6 +170,11 @@ main{
     align-items: center;    
     padding: 20px;
 }
+
+body.dark .mainBg{
+    background-color: #C85EE3;
+}
+
 #thing{
     font-size: 24px;
     font-weight: bold;
@@ -146,6 +182,12 @@ main{
     border-top-right-radius: 10px;
     background-color: #B5E0F7;
 }
+
+body.dark #thing{
+    background-color: #E067FF;
+    color: rgb(0, 0, 0);
+}
+
 table tr:last-child td:first-child {
     border-bottom-left-radius: 10px;
 }
@@ -153,7 +195,7 @@ table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
 .greeting {
-    width: 200px;
+    width: 300px;
     background: #E7F9FF;
     border: 1px solid #000;
     padding: 20px;
@@ -165,12 +207,8 @@ table tr:last-child td:last-child {
     margin: 0 auto 20px;
 }
 
-.table-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #000;
+body.dark .greeting{
+    background: #F6D1FF;
 }
 
 
@@ -184,6 +222,11 @@ table tr:last-child td:last-child {
     box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
 }
 
+body.dark .schedule {
+    background: #F6D1FF;
+    box-shadow: 4px 7px 4px rgba(255, 255, 255, 0.25);
+}
+
 .schedule th, .schedule td {
     border: 1px solid #000;
     padding: 10px;
@@ -194,6 +237,10 @@ table tr:last-child td:last-child {
     background: #B5E0F7;
     font-size: 18px;
     font-weight: 700;
+} 
+
+body.dark .schedule th{
+    background-color: #E067FF ;
 }
 
 .schedule td {
@@ -227,3 +274,137 @@ table tr:last-child td:last-child {
     }
 }
 
+.greetingForRozklad{
+    width: 200px;
+    background: #E7F9FF;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    }
+body.dark .greetingForRozklad{
+    background: #F6D1FF
+}
+.scheduleInRozklad {
+    width: 100%;
+    border-spacing: 0;
+    background: #E7F9FF;
+    border-radius: 10px;
+    box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .scheduleInRozklad {
+    background: #F6D1FF;
+    box-shadow: 4px 7px 4px rgba(255, 255, 255, 0.25);
+}
+
+.scheduleInRozklad th, .scheduleInRozklad td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.scheduleInRozklad th {
+    background: #B5E0F7;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+body.dark .scheduleInRozklad th{
+    background-color: #E067FF ;
+}
+
+.scheduleInRozklad td {
+    font-size: 16px;
+}
+
+.scheduleInRozklad td:nth-child(1) {
+    font-weight: 600;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.scheduleInRozklad td:nth-child(7) {
+    font-weight: bold;
+    background-color: #DFF3FF;
+}
+
+.mainShodenik{
+    flex: 1;
+    align-items: center;
+    padding: 20px;
+}
+#thing{
+    font-size: 24px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #B5E0F7;
+}
+
+body.dark #thing{
+    background-color: #E067FF;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+#greetingForMark{
+    width: 200px;
+    background: #E7F9FF;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+}
+
+#greetingForMark{
+    background: #F6D1FF;
+    border: 1px solid #000;
+}
+
+.mark {
+    margin: 0 auto 20px;
+    width: 80%;
+    border-spacing: 0;
+    background: #E7F9FF;
+    border-radius: 10px;
+    box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+}
+body.dark .mark{
+background: #F6D1FF;
+box-shadow: 4px 7px 4px rgba(255, 255, 255, 0.25);
+}
+
+.mark th, .mark td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.mark th {
+    background: #B5E0F7;
+    font-size: 18px;
+    font-weight: 700;
+}
+body.dark .mark th {
+    background: #E067FF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mark td {
+    font-size: 16px;
+}
