@@ -42,3 +42,16 @@ function saveCheckboxState() {
         document.cookie = name + "=" + value + "; path=/";
     }
 }
+const checkBoxes = document.querySelectorAll(".checkBox input[type='checkbox']")
+
+checkBoxes.forEach((checkBox) => {
+  checkBox.addEventListener("change", function() {
+    const tdElement = this.closest("td.checkBox")
+
+    if (this.checked) {
+      tdElement.style.textDecoration = "line-through"
+    } else {
+      tdElement.style.textDecoration = "none"
+    }
+  })
+})
