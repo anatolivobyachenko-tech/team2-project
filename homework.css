@@ -1,9 +1,9 @@
-header{
+header {
     box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 0 4px 6px -2px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
     align-items: center;
     padding: 0 10px;
     margin: 0;
@@ -11,33 +11,23 @@ header{
     height: 60px;
 }
 
-.dark header{
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 4px 6px -2px rgba(255, 244, 244, 0.3);
-    align-items: center;
-    padding: 0 10px;
-    margin: 0;
-    width: 100%;
-    height: 60px;
+body.dark header {
     color: white;
     background-color: #4B4848;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: white;
 }
 
-body.dark{
+body.dark {
     background-color: #4B4848;
 }
 
-.buttonTheme{
+.buttonTheme {
     position: absolute;
     width: 48px;
     height: 48px;
@@ -45,27 +35,28 @@ body.dark{
     cursor: pointer;
 }
 
-body.dark .buttonTheme svg{
+body.dark .buttonTheme svg {
     fill: white;
 }
 
-.buttonTheme:hover{
+.buttonTheme:hover {
     transform: scale(1.05);
     transition-duration: .2s;
 }
 
-#first{
+#first {
     margin: 0;
     font-size: 40px;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: row;
     height: calc(100vh - 60px);
     align-items: center;
 }
 
-.sideMenu{
+.sideMenu {
     width: 290px;
     background-color: #C8F0FF;
     color: black;
@@ -74,36 +65,25 @@ body.dark .buttonTheme svg{
     align-items: flex-start;
     gap: 15px;
     padding: 10px;
-    box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
     padding-top: 40px;
     height: 100%;
     overflow-y: auto;
     box-sizing: border-box;
 }
 
-body.dark .sideMenu{
+body.dark .sideMenu {
     color: white;
-    width: 290px;
     background-color: #C85EE3;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 10px;
-    box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
-    padding-top: 40px;
-    height: 100%;
-    overflow-y: auto;
-    box-sizing: border-box;
+    box-shadow: inset 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-.sideMenu a{
+.sideMenu a {
     text-decoration: none;
     color: black;
 }
 
-
-.iconInButton{
+.iconInButton {
     position: relative;
     display: flex;
     justify-content: center;
@@ -116,19 +96,18 @@ body.dark .sideMenu{
     font-size: 20px;
     width: 100%;
     border: 2px solid #E7F9FF;
-    border-radius: 40px;
     background-color: #E7F9FF;
     box-sizing: border-box;
-    box-shadow: 0 4px 6px -2px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
-.iconInButton:hover{
+.iconInButton:hover {
     transform: scale(1.05);
     transition-duration: .2s;
 }
 
-.iconInButton img{
+.iconInButton img {
     position: absolute;
     left: 20px;
     width: 24px;
@@ -136,30 +115,31 @@ body.dark .sideMenu{
     transform: translateY(5px);
 }
 
-body.dark .iconInButton{
+body.dark .iconInButton {
     border: 2px solid #F6D1FF;
     background-color: #F6D1FF;
     box-shadow: 0 4px 6px -2px rgba(255, 255, 255, 0.3);
 }
 
-.iconInButton span{
+.iconInButton span {
     margin: 0;
     text-align: center;
     transform: translateY(5px);
 }
-.iconLink{
+
+.iconLink {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 
-.iconLink:hover{
+.iconLink:hover {
     transform: scale(1.30);
     transition-duration: .3s;
 }
 
-.linkTo{
+.linkTo {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -170,26 +150,26 @@ body.dark .iconInButton{
     height: 40px;
 }
 
-.iconLink svg{
+.iconLink svg {
     width: 30px;
     height: 30px;
     fill: #68C8F1;
 }
 
-body.dark .iconLink svg{
+body.dark .iconLink svg {
     fill: #F6D1FF;
 }
 
-main{
+main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     padding: 20px;
     justify-content: flex-start;
 }
 
-caption{
+caption {
     font-size: 30px;
     font-weight: bold;
 }
@@ -218,24 +198,25 @@ th, td {
 body.dark th, body.dark td {
     border: 1px solid black;
     padding: 8px;
-    background-color: #F6D1FF
+    background-color: #F6D1FF;
 }
 
 #thing {
     font-size: 24px;
     font-weight: bold;
-    border-bottom: 2px solid black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     background-color: #C8F0FF;
 }
 
-body.dark #thing{
+.iconInButton {
+    color:black;
+}
+
+body.dark #thing {
     background-color: #E067FF;
     color: #efe7f0;
 }
 
-.checkBox{
+.checkBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,18 +225,19 @@ body.dark #thing{
 table tr:last-child td:first-child {
     border-bottom-left-radius: 10px;
 }
+
 table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
     width: 24px;
     height: 24px;
     cursor: pointer;
     accent-color: green;
 }
 
-input[type=checkbox]:hover{
+input[type=checkbox]:hover {
     transform: scale(1.30);
     transition-duration: .3s;
 }
