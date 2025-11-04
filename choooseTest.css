@@ -222,7 +222,6 @@ body.dark .chulink{
     align-items: center;
     gap:40px;
     margin-top: 40px;
-    /*transform: translateX(100px);*/
 }
 
 .chu{
@@ -254,4 +253,3 @@ body.dark .chu{
     transform: scale(1.05);
     transition-duration: .2s;
 }
-
